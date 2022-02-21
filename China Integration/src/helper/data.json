@@ -1,0 +1,299 @@
+{
+	"SalesOrders": [
+		{
+			"createdDate": "2022-02-11T01:26:30.000000+00:00",
+			"entity": {
+				"name": "CUS66660 Tmall Flagship",
+				"internal_id": "3760095"
+			},
+			"currency": {
+				"name": "CNY",
+				"internal_id": "11"
+			},
+			"tranDate": "2022-02-07T13:00:00.000000+00:00",
+			"tranId": "SOCHN08485",
+			"source": "CSV",
+			"salesRep": {
+				"name": "In House International In House International",
+				"internal_id": "3223"
+			},
+			"otherRefNum": "2458008651766712621",
+			"memo": "2458008651766712621",
+			"salesEffectiveDate": "2022-02-07T13:00:00.000000+00:00",
+			"exchangeRate": 1,
+			"currencyName": "CNY",
+			"toBePrinted": false,
+			"toBeEmailed": false,
+			"email": "finance@lovetodream.com.au",
+			"toBeFaxed": false,
+			"shippingAddress": {
+				"internalId": "7047841",
+				"country": "_china",
+				"addrText": "China",
+				"override": true,
+				"xmlns:platform_common": "urn:common_2020_2.platform.webservices.netsuite.com"
+			},
+			"shipIsResidential": false,
+			"shipDate": "2022-02-07T13:00:00.000000+00:00",
+			"actualShipDate": "2022-02-08T13:00:00.000000+00:00",
+			"linkedTrackingNumbers": "SF1348538324281",
+			"shipComplete": false,
+			"saveOnAuthDecline": true,
+			"canHaveStackable": false,
+			"subTotal": 253.23,
+			"taxTotal": 32.92,
+			"total": 286.15,
+			"balance": 581966.46,
+			"department": {
+				"name": "LTD Shanghai",
+				"internal_id": "22"
+			},
+			"subsidiary": {
+				"name": "Love To Dream Baby Trading (Shanghai) Limited",
+				"internal_id": "18"
+			},
+			"lastModifiedDate": "2022-02-13T06:23:04.000000+00:00",
+			"location": {
+				"name": "LTD Shanghai (BJHT)",
+				"internal_id": "76"
+			},
+			"status": "Billed",
+			"terms": {
+				"name": "Prepaid",
+				"internal_id": "4"
+			},
+			"itemList": {
+				"item": [
+					{
+						"item": {
+							"name": "L10 01 001 : L10 01 001 PK M Swaddle UP Original Pink M",
+							"internal_id": "55"
+						},
+						"quantityAvailable": 1318,
+						"expandItemGroup": false,
+						"lineUniqueKey": 15750621,
+						"quantityOnHand": 1354,
+						"quantity": 1,
+						"description": "Swaddle UP Original Pink M",
+						"price": {
+							"name": "Custom",
+							"internal_id": "-1"
+						},
+						"amount": 253.23,
+						"commitInventory": "_availableQty",
+						"class": {
+							"name": "1.  Swaddle Up : A. Original : a. Original",
+							"internal_id": "3"
+						},
+						"isClosed": false,
+						"grossAmt": 286.15,
+						"excludeFromRateRequest": false,
+						"line": 1,
+						"quantityBackOrdered": 0,
+						"quantityBilled": 1,
+						"quantityCommitted": 0,
+						"quantityFulfilled": 1,
+						"quantityPacked": 1,
+						"quantityPicked": 1,
+						"tax1Amt": 32.92,
+						"taxCode": {
+							"name": "VAT_CN:VAT_CN_13%",
+							"internal_id": "2921"
+						},
+						"taxRate1": 13,
+						"expectedShipDate": "2022-02-08T08:00:00.000000+00:00",
+						"customFieldList": {
+							"customField": [
+								{
+									"value": {
+										"name": "1.  Swaddle Up : A. Original : a. Original",
+										"internal_id": "3",
+										"type_id": "-101"
+									},
+									"internal_id": "583",
+									"script_id": "custcol_class",
+									"xsi:type": "platformCore:SelectCustomFieldRef"
+								},
+								{
+									"value": "Swaddle UP Original Pink M",
+									"internal_id": "4411",
+									"script_id": "custcol_gridoe_hidden_displayname",
+									"xsi:type": "platformCore:StringCustomFieldRef"
+								},
+								{
+									"value": "Swaddle UP Original",
+									"internal_id": "4410",
+									"script_id": "custcol_gridoe_hidden_parentdispname",
+									"xsi:type": "platformCore:StringCustomFieldRef"
+								},
+								{
+									"value": {
+										"name": "L10 01 001 Swaddle UP Original",
+										"internal_id": "45",
+										"type_id": "-10"
+									},
+									"internal_id": "4409",
+									"script_id": "custcol_gridoe_hidden_parentname",
+									"xsi:type": "platformCore:SelectCustomFieldRef"
+								},
+								{
+									"value": "3",
+									"internal_id": "584",
+									"script_id": "custcol_qty_aus_multiple",
+									"xsi:type": "platformCore:LongCustomFieldRef"
+								},
+								{
+									"value": "96",
+									"internal_id": "568",
+									"script_id": "custcol_qty_intl_min",
+									"xsi:type": "platformCore:LongCustomFieldRef"
+								},
+								{
+									"value": "24",
+									"internal_id": "567",
+									"script_id": "custcol_qty_intl_multiple",
+									"xsi:type": "platformCore:LongCustomFieldRef"
+								},
+								{
+									"value": "L10 01 001 PK M",
+									"internal_id": "3046",
+									"script_id": "custcol_sku",
+									"xsi:type": "platformCore:StringCustomFieldRef"
+								},
+								{
+									"value": "0.0",
+									"internal_id": "4791",
+									"script_id": "custcol_statistical_value_base_curr",
+									"xsi:type": "platformCore:DoubleCustomFieldRef"
+								}
+							]
+						},
+						"custom_fields": {
+							"f_custcol_qty_intl_multiple": 24,
+							"f_custcol_qty_intl_min": 96,
+							"f_custcol_class": "1.  Swaddle Up : A. Original : a. Original",
+							"f_custcol_class_id": "3",
+							"f_custcol_qty_aus_multiple": 3,
+							"f_custcol_sku": "L10 01 001 PK M"
+						}
+					}
+				]
+			},
+			"customFieldList": {
+				"customField": [
+					{
+						"value": "CUS66660",
+						"internal_id": "3070",
+						"script_id": "custbody14",
+						"xsi:type": "platformCore:StringCustomFieldRef"
+					},
+					{
+						"value": "2022-02-20T05:00:00.000000-08:00",
+						"internal_id": "3071",
+						"script_id": "custbody15",
+						"xsi:type": "platformCore:DateCustomFieldRef"
+					},
+					{
+						"value": false,
+						"internal_id": "3191",
+						"script_id": "custbody21",
+						"xsi:type": "platformCore:BooleanCustomFieldRef"
+					},
+					{
+						"value": "3760095",
+						"internal_id": "3198",
+						"script_id": "custbody22",
+						"xsi:type": "platformCore:StringCustomFieldRef"
+					},
+					{
+						"value": false,
+						"internal_id": "3558",
+						"script_id": "custbody28",
+						"xsi:type": "platformCore:BooleanCustomFieldRef"
+					},
+					{
+						"value": false,
+						"internal_id": "5046",
+						"script_id": "custbody37",
+						"xsi:type": "platformCore:BooleanCustomFieldRef"
+					},
+					{
+						"value": {
+							"name": "China",
+							"internal_id": "1",
+							"type_id": "284"
+						},
+						"internal_id": "3048",
+						"script_id": "custbody9",
+						"xsi:type": "platformCore:SelectCustomFieldRef"
+					},
+					{
+						"value": {
+							"name": "China LTD Online",
+							"internal_id": "27",
+							"type_id": "-109"
+						},
+						"internal_id": "576",
+						"script_id": "custbody_customer_category",
+						"xsi:type": "platformCore:SelectCustomFieldRef"
+					},
+					{
+						"value": false,
+						"internal_id": "575",
+						"script_id": "custbody_customer_free_freight",
+						"xsi:type": "platformCore:BooleanCustomFieldRef"
+					},
+					{
+						"value": "salesord",
+						"internal_id": "5642",
+						"script_id": "custbody_emea_transaction_type",
+						"xsi:type": "platformCore:StringCustomFieldRef"
+					},
+					{
+						"value": false,
+						"internal_id": "4070",
+						"script_id": "custbody_fsg_exportedtoaxima",
+						"xsi:type": "platformCore:BooleanCustomFieldRef"
+					},
+					{
+						"value": false,
+						"internal_id": "5629",
+						"script_id": "custbody_oo_email_tracking_number",
+						"xsi:type": "platformCore:BooleanCustomFieldRef"
+					},
+					{
+						"value": "10/02/2022 17:26:29",
+						"internal_id": "4806",
+						"script_id": "custbody_report_timestamp",
+						"xsi:type": "platformCore:StringCustomFieldRef"
+					},
+					{
+						"value": false,
+						"internal_id": "5459",
+						"script_id": "custbody_sps_xref_queued",
+						"xsi:type": "platformCore:BooleanCustomFieldRef"
+					},
+					{
+						"value": "1",
+						"internal_id": "553",
+						"script_id": "custbody_total_quantity",
+						"xsi:type": "platformCore:LongCustomFieldRef"
+					}
+				]
+			},
+			"xmlns:tran_sales": "urn:sales_2020_2.transactions.webservices.netsuite.com",
+			"internal_id": "9811896",
+			"external_id": "JY008651744600",
+			"xsi:type": "tranSales:SalesOrder",
+			"custom_segments": {},
+			"custom_fields": {
+				"f_custbody14": "CUS66660",
+				"f_custbody22": "3760095",
+				"f_custbody_oo_email_tracking_number": false
+			}
+		}
+	],
+	"Search ID": "WEBSERVICES_4136761_022020224297669801995029831_f47add4b6202",
+	"Total pages": 1,
+	"Page number": 1
+}

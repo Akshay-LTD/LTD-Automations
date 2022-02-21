@@ -1,0 +1,6 @@
+*.exe
+src/__pycache__
+src/build
+src/dist
+src/main.spec
+src/test.ipynb

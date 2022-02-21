@@ -1,0 +1,21 @@
+For Tmall:
+1. Download raw data from Tmall website
+2. Copy the csv files into Input/Tmall
+
+For JD Flagship:
+1. Download raw data from JD website
+2. Extract the csv files
+3. Copy the csv files into Input/JD Flagship
+
+For Wechat:
+1. Download raw data from Wechat website
+2. Extract the csv files
+3. Copy the csv files into Input/Wechat
+
+To obtain the reports, simply run main.exe and check in the Output folder for the csv and xlsx files.
+
+NOTE: IT IS IMPORTANT NOT TO RENAME ANY OF THE INPUT FILES AS THE PROGRAM DETECTS THE FILES BY THE ORIGINAL NAMING SCHEME.
+NOTE 2: THE OUTPUT FILES WILL HAVE THE SAME NAME AS THE INPUT FILES.
+NOTE 3: YOU CAN DROP IN AS MANY FILES YOU WANT INTO THE INPUT FOLDER. THE PROGRAM WILL GENERATE REPORTS FOR EVERY CSV FILE IT FINDS.
+
+If you'd like any functionality to be changed please let me (Shaun) know.
