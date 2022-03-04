@@ -86,22 +86,25 @@ def process_jd(df, df_internalID):
 def generate_jd():
     df_internalID = get_internalID()
     for file in glob.glob("Input/JD Flagship/*.csv"):
-        df = pd.read_csv(file, encoding='gbk')
+        df = pd.read_csv(file, encoding='gb18030')
 
         name = re.findall(r"[\d\-TO]+", file)
 
         # process data
         df_upload = process_jd(df, df_internalID)
 
+        # get suffix for file name
+        suffix = get_date(df_upload)
+
         # write to csv
-        df_upload.to_csv(f'Output/JD Flagship/CSV/{name[0]}.csv', index=False)
+        df_upload.to_csv(f'Output/JD Flagship/CSV/JD SO Upload {suffix}.csv', index=False)
 
         # write to excel
-        writer = pd.ExcelWriter(f'Output/JD Flagship/Excel/{name[0]}.xlsx', 
+        writer = pd.ExcelWriter(f'Output/JD Flagship/Excel/JD SO Upload {suffix}.xlsx', 
                                 engine='xlsxwriter', 
                                 engine_kwargs={'options': {'string_to_numbers': False}})
         df_upload.to_excel(writer, index=False, sheet_name='Wechat')
         writer.save()
 
-        print(f"[GENERATED] Output/JD Flagship/CSV/{name[0]}.csv")
-        print(f"[GENERATED] Output/JD Flagship/Excel/{name[0]}.xlsx")
+        print(f"[GENERATED] Output/JD Flagship/CSV/JD SO Upload {suffix}.csv")
+        print(f"[GENERATED] Output/JD Flagship/Excel/JD SO Upload {suffix}.xlsx")

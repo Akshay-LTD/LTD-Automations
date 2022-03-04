@@ -3,6 +3,7 @@ from tmall.tmall import *
 from wechat.wechat import *
 from helper.helper import *
 from helper.upload import *
+from helper.drive import *
 
 if __name__ == "__main__":
 
@@ -22,6 +23,9 @@ if __name__ == "__main__":
     # generare output files for Wechat
     generate_wechat()
 
+    # upload files to google drive
+    upload_drive()
+
     # upload files in output to NetSuite
-    nc = connect_tba()
-    upload_files(nc)
+    # nc = connect_ns()
+    # upload_files(nc)

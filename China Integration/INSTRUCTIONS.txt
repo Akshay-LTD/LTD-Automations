@@ -1,19 +1,5 @@
-For Tmall:
-1. Download raw data from Tmall website
-2. Copy the csv files into Input/Raw Data
-
-For JD Flagship:
-1. Download raw data from JD website
-2. Copy the zip files into Input/Raw Data
-
-For Wechat:
-1. Download raw data from Wechat website
-2. Copy the zip files into Input/Raw Data
-
-To obtain the reports, simply run main.exe and check in the Output folder for the csv and xlsx files.
-
-NOTE: IT IS IMPORTANT NOT TO RENAME ANY OF THE RAW DATA FILES AS THE PROGRAM DETECTS THE FILES BY THE ORIGINAL NAMING SCHEME.
-NOTE 2: THE OUTPUT FILES WILL HAVE THE SAME NAME AS THE INPUT FILES.
-NOTE 3: YOU CAN DROP IN AS MANY FILES YOU WANT INTO THE INPUT FOLDER. THE PROGRAM WILL GENERATE REPORTS FOR EVERY CSV FILE IT FINDS.
-
-If you'd like any functionality to be changed please let me (Shaun) know.
+1. Download the raw data files and copy them into Input/Raw Data.
+2. Run main.exe
+3. If the zip file is password protected, the program will ask to enter the password.
+4. The CSV and Excel files will be in Output and the CSV files will be uploaded to Google Drive as well.
+5. I have setup an external job to upload the files in Google Drive to Netsuite.

@@ -54,6 +54,7 @@ def upload_files(nc):
                 }
             )
             print(f"[UPLOAD] {name}")
+            print(uploaded_file)
 
     return uploaded_file
 

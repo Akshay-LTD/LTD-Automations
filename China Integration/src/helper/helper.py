@@ -24,18 +24,24 @@ def clear_dir():
     platforms = ["JD Flagship", "Tmall", "Wechat"]
 
     for p in platforms:
-        for file in glob.glob(f"Input/{p}/*.csv"):
+        for file in glob.glob(f"Input/{p}/*"):
             os.remove(file)
             print(f"[DELETED] {file}")
 
     for p in platforms:
-        for file in glob.glob(f"Output/{p}/CSV/*.csv"):
+        for file in glob.glob(f"Output/{p}/CSV/*"):
             os.remove(file)
             print(f"[DELETED] {file}")
 
-        for file in glob.glob(f"Output/{p}/Excel/*.xlsx"):
+        for file in glob.glob(f"Output/{p}/Excel/*"):
             os.remove(file)
             print(f"[DELETED] {file}")
+
+def get_date(df):
+    min_date = df['Date'].min().replace('/', '')
+    max_date = df['Date'].max().replace('/', '')
+
+    return min_date + " " + max_date
 
 def move_files():
 

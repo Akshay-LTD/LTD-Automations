@@ -87,15 +87,18 @@ def generate_tmall():
         # process data
         df_upload = process_tmall(df, df_internalID)
 
+        # get suffix for file name
+        suffix = get_date(df_upload)
+
         # write to csv
-        df_upload.to_csv(f'Output/Tmall/CSV/{name[0]}.csv', index=False)
+        df_upload.to_csv(f'Output/Tmall/CSV/Tmall SO Upload {suffix}.csv', index=False)
         
         # write to excel
-        writer = pd.ExcelWriter(f'Output/Tmall/Excel/{name[0]}.xlsx', 
+        writer = pd.ExcelWriter(f'Output/Tmall/Excel/Tmall SO Upload {suffix}.xlsx', 
                                 engine='xlsxwriter', 
                                 engine_kwargs={'options': {'string_to_numbers': False}})
         df_upload.to_excel(writer, index=False, sheet_name='Tmall')
         writer.save()
 
-        print(f"[GENERATED] Output/Tmall/CSV/{name[0]}.csv")
-        print(f"[GENERATED] Output/Tmall/Excel/{name[0]}.xlsx")
+        print(f"[GENERATED] Output/Tmall/CSV/Tmall SO Upload {suffix}.csv")
+        print(f"[GENERATED] Output/Tmall/Excel/Tmall SO Upload {suffix}.xlsx")
